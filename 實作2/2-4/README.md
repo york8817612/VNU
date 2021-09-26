@@ -1,37 +1,25 @@
-# 實作2-1
+# 實作2-4
 
 ## 說明
-實作2-2, RGB LED燈全彩模組, 分別讓LED輪流表現正紅、正綠、正藍，三個顏色，時間間隔1秒鐘。並且觀查LED顏色和波形或是電壓有什麼關連性? 可將個人說明在更新GitHub時一起加入. (互動2), (2021-09-05)
+實作2-4 analogRead(), 1024解析度 (i.e.,10-bit): 可變電阻 + 序列監視器與輸出; 當你改變可變電阻的阻值(e.g., 10K-ohm)時，序列監視器輸出的數值有什麼改變? 數值又有什麼意義呢? 可試將你的想法寫在你的GitHub Page中喔! (互動4) (2021-09-12)
 
 ### 電路圖
-![電路圖](s.PNG)
+![電路圖](2-4.PNG)
 ### 程式
 ```C
 // C++ code
 //
-int Red = 11;
-int Green = 10;
-int Blue = 9;
+int sensorValue = 0;
 void setup()
 {
-  pinMode(Red, OUTPUT);
-  pinMode(Green, OUTPUT);
-  pinMode(Blue, OUTPUT);
+  pinMode(A0, INPUT);
+  Serial.begin(9600);
 }
 
 void loop()
 {
-  analogWrite(Red, 255);
-  analogWrite(Green, 0);
-  analogWrite(Blue, 0);
-  delay(1000);
-  analogWrite(Red, 0);
-  analogWrite(Green, 255);
-  analogWrite(Blue, 0);
-  delay(1000);
-  analogWrite(Red, 0);
-  analogWrite(Green, 0);
-  analogWrite(Blue, 255);
-  delay(1000);
+  sensorValue = analogRead(A0);
+  Serial.println(sensorValue);
+  delay(10);
 }
 ```
