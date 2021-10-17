@@ -5,5 +5,5 @@
 ## 常用連結
 
 * 課程公告: [連結](https://ivory-gaura-57e.notion.site/60d63bcefee14a7b81b443ac83f99954)
-* 即時互動: [連結](https://weboffice.vnu.edu.tw/ilearn/file.ashx?h=0170441489D485EA25E93558F4F95C2A295892FD96EC880DC5DA620DC1553073)
-* TINKERCAD: [連結](https://weboffice.vnu.edu.tw/ilearn/file.ashx?h=0170441489D485EA25E93558F4F95C2AC30F9DC10751C69738E2CE58ADCA474B)
+* 即時互動: [連結](https://docs.google.com/spreadsheets/d/1A24WlsYJWqiKypr65PPd4Qx6N3OHJ9PmJqdnKvX82Eg/edit#gid=1079961384)
+* TINKERCAD: [連結](https://www.tinkercad.com/)
