@@ -1,5 +1,5 @@
 
-# 實作4-2
+# 實作4-3
 
 ## 說明
 Lab 4-3 LCD顯示"Hello" + 你的英文名字 (e.g., "Hello Horace")
