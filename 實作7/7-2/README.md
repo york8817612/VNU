@@ -11,7 +11,7 @@ Lab 7-2 暖身: 一起來十分鐘學會Python
 name = "MingLi"
 print(name)
 ```
-![image](https://user-images.githubusercontent.com/10968626/140632219-bc4e1224-891d-49ce-9aa1-7977bef6f4d9.png)
+![image](https://user-images.githubusercontent.com/10968626/140632309-f8652108-4aed-4c77-93a2-a72e85f33dae.png)
 
 * task 2: number variable
 ```python
