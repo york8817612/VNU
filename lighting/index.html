@@ -1,0 +1,127 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        body {
+            background: #000;
+            overflow: hidden;
+            margin: 0;
+        }
+
+        .lightning {
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            width: 100%;
+        }
+
+        .lightning div {
+            position: absolute;
+            overflow: hidden;
+        }
+
+        @keyframes flash_light1 {
+            0% {
+                opacity: 0.5;
+            }
+            8%,
+            12%,
+            16% {
+                opacity: 0.5;
+            }
+
+            10%,
+            14% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: .5;
+            }
+
+            100% {
+                opacity: .3;
+            }
+        }
+
+        @keyframes flash_light {
+            0% {
+                height: 0px;
+                opacity: 0.5;
+            }
+
+            7.5% {
+                width: 20vw;
+                height: 30vh;
+            }
+
+            8%,
+            12%,
+            16% {
+                opacity: 0.5;
+            }
+
+            10%,
+            14% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0;
+            }
+
+            100% {
+                width: 20vw;
+                height: 30vh;
+                opacity: 0;
+            }
+        }
+
+        .lightning div img {
+            display: block;
+            margin: 0;
+            width: 100%;
+        }
+
+        .lightning .lightning1 {
+            position: absolute;
+            right: 0%;
+            animation: flash_light 5.7s infinite;
+        }
+
+        .lightning .lightning3 {
+            position: absolute;
+            animation: flash_light1 5.7s infinite;
+        }
+
+        .lightning .lightning2 {
+            position: absolute;
+            left: 70%;
+            animation: flash_light 5.1s infinite;
+            animation-delay: -2.33s;
+        }
+
+        .lightning .lightning4 {
+            position: absolute;
+            animation: flash_light1 5.1s infinite;
+            animation-delay: -2.33s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="banner">
+        <div class="lightning">
+            <div class="lightning3"><img src="images/hacker.jpg" style="z-index: 3;width: 100vw;height: 100vh;"></div>
+            <div class="lightning1"><img src="images/lightning1.png" style="z-index: 1;width: 20vw;height: 30vh;"></div>
+            <div class="lightning2"><img src="images/lightning2.png" style="z-index: 2;width: 20vw;height: 30vh;"></div>
+            <div class="lightning4"><img src="images/hacker.jpg" style="z-index: 4;width: 100vw;height: 100vh;"></div>
+        </div>
+    </div>
+</body>
+
+</html>
